@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <nav id="navbar">
+        <header>
+            <h1>Java Documentation</h1>
+            <a href="#introduction" class="nav-link"><h2>introduction</h2></a>
+            <a href="#hello_world" class="nav-link"><h2>hello world</h2></a>
+            <a href="#variables" class="nav-link"><h2>variables</h2></a>
+            <a href="#if_statement" class="nav-link"><h2>if statement</h2></a>
+            <a href="#for_loop" class="nav-link"><h2>for loop</h2></a>
+        </header>
+    </nav>
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>
+                <h1>introduction</h1>
+            </header>
+            <p>(This is just a simple technical documentation project; please do not consider the information provided in this tutorial!)</p>
+            <p>
+                Java is a cross-platform, object-oriented programming language known for its versatility and robustness. It is designed to be simple, portable, and secure. With Java, developers can write code once and run it anywhere, thanks to its bytecode compilation model. Java programs can seamlessly interact with their environment, making it a popular choice for a wide range of applications.
+            </p>
+            <p>Java programming language is widely used in various areas, including:</p>
+            <ul>
+                <li>
+                    <strong>Enterprise Applications:</strong> Java is extensively used for developing enterprise-level applications such as Customer Relationship Management (CRM) systems, Enterprise Resource Planning (ERP) software, and financial systems due to its scalability, reliability, and robustness.
+                </li>
+                <li>
+                    <strong>Web Development:</strong> Java is commonly employed for server-side web development using technologies like Servlets, JavaServer Pages (JSP), and frameworks such as Spring and Hibernate. It is also used for building web services and RESTful APIs.
+                </li>
+                <li>
+                    <strong>Mobile Development:</strong> Java is the primary language for developing Android applications. Android Studio, the official Integrated Development Environment (IDE) for Android development, uses Java as the main programming language.
+                </li>
+                <li>
+                    <strong>Desktop Applications:</strong> Java's platform independence makes it suitable for developing cross-platform desktop applications. Swing and JavaFX are Java libraries commonly used for creating graphical user interfaces (GUIs) for desktop applications.
+                </li>
+                <li>
+                    <strong>Big Data:</strong> Java is widely used in the field of big data processing and analytics. Frameworks like Apache Hadoop and Apache Spark are written in Java, and many big data applications and tools are developed using Java due to its performance and scalability.
+                </li>
+                <li>
+                    <strong>Scientific and Research Applications:</strong> Java is used in scientific and research fields for developing applications related to data analysis, simulations, and scientific computing.
+                </li>
+                <li>
+                    <strong>Gaming:</strong> Although not as common as other languages like C++ or C#, Java is also used for developing games, especially for mobile platforms.
+                </li>
+            </ul>
+        </section>
+        <section id="hello_world" class="main-section">
+            <header>
+                <h1>hello world</h1>
+            </header>
+            <p>
+                To run our code with Java, we need a class and a main method. The main method is like the engine of the project. Here's an example of a class with a main method inside:
+            </p>
+            <div class="code-container">
+                <code>
+                    public class MyClass {
+                        public static void main(String[] args) {
+                            
+                        }
+                    }
+                </code>
+            </div>
+            <p>
+                In this example, we have a class named MyClass with a main method.
+            </p>
+            <p>
+                Here are the access modifiers used in Java:
+            </p>
+            <ul>
+                <li>
+                    <strong>public:</strong> Indicates that any class, method, variable, or package is accessible from anywhere.
+                </li>
+                <li>
+                    <strong>private:</strong> Specifies that a class or method is accessible only within the class it is declared. It cannot be accessed from other classes.
+                </li>
+                <li>
+                    <strong>protected:</strong> Indicates that a class or method is accessible within the same package or subclasses. However, access from different packages requires being a subclass.
+                </li>
+                <li>
+                    <strong>default:</strong>  Specifies that a class or method is accessible only within its own package. When no access modifier is specified, this access modifier is used by default.
+                </li>
+            </ul>
+            <p>You can type hello world into the console using with this code.. </p>
+            <p>(This tutorial is going dumb I guess.)</p>
+            <div class="code-container">
+                <code>
+                    System.out.print("Hello World!");
+                </code>
+            </div>
+            <p>and with this you can write anything you want to the console.</p>
+            <p>e.g.</p>
+            <div class="code-container">
+                <code>
+                    System.out.print("Yo how's going? This tutorial is insane!");
+                </code>
+            </div>
+        </section>
+        <section id="variables" class="main-section">
+            <header>
+                <h1>variables</h1>
+            </header>
+            <p>You can think variables like a boxes and we assign some values ​​to these boxes</p>
+            <p>Here is an example of variables in java</p>
+            <div class="code-container">
+                <code>int x = 15;</code>
+                <code>int y = 5;</code>
+                <code>int z = x + y;</code>
+                <code>System.out.print(z);//You will see "20" in console</code>
+                <code>System.out.print(x);//You will see "15" in console</code>
+            </div>
+            <p>This was an example for holding integer data but sometimes you will need different data types to be able to store different data. Here are other data types in Java:</p>
+            <ul>
+                <li><strong>String</strong> for texts</li>
+                <li><strong>char</strong> for characters</li>
+                <li><strong>long</strong> for integers</li>
+                <li><strong>int</strong> again for integers</li>
+                <li><strong>short</strong> for integers too</li>
+                <li><strong>byte</strong> for integers too again</li>
+                <li><strong>float</strong> for decimal numbers</li>
+                <li><strong>double</strong> for decimal numbers too</li>
+                <li><strong>boolean</strong> for just "true" and "false"</li>
+            </ul>
+        </section>
+        <section id="if_statement" class="main-section">
+            <header>
+                <h1>if statement</h1>
+            </header>
+            <p>
+                The "if" statement checks whether a condition is true or false. If the condition is "true", the code inside the "if" block executes; however, if the condition is "false", the code inside the "if" block does not execute.
+            </p>
+            <p>
+                e.g.
+            </p>
+            <div class="code-container">
+                <code>int x = 15;</code>
+                <code>int y = 5;</code>
+                <code>
+                    if(x > y) {
+                        System.out.print(x + y);
+                    } //Which means "If x is greater than y, print the sum of x and y to the console."
+                </code>
+            </div>
+            <p>As you can see condition is "true" so 20 will be written to the console</p>
+        </section>
+        <section id="for_loop" class="main-section">
+            <header>
+                <h1>for loop</h1>
+            </header>
+            <p>
+                In Java, a "for" loop is used to iterate over a range of values or to traverse elements in an array or collection. It consists of three parts: initialization, condition, and increment/decrement. Here's a brief explanation:
+            </p>
+            <ol>
+                <li><strong>Initialization:</strong> It initializes the loop control variable.</li>
+                <li><strong>Condition:</strong> It checks the condition before every iteration. If the condition evaluates to "true", the loop continues; otherwise, it exits.</li>
+                <li><strong>Increment/Decrement:</strong> It updates the loop control variable after each iteration.</li>
+            </ol>
+            <p>The general syntax of a "for" loop in Java is:</p>
+            <div class="code-container">
+                <code>
+                    for (initialization; condition; increment/decrement) {
+                        // code to be executed
+                    }
+                </code>
+            </div>
+            <p>e.g.</p>
+            <div class="code-container">
+                <code>
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println(i);
+                    }
+                </code>
+            </div>
+            <p>This loop will print numbers from 0 to 4.</p>
+        </section>
+    </main>
+  </body>
+</html>
